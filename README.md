@@ -80,8 +80,6 @@ ip address 192.168.10.1 255.255.255.0
 interface GigabitEthernet0/0/1
 
 ip address 192.168.30.1 255.255.255.252
- 
-
 
 #### Router-CiudadB:
 
@@ -92,6 +90,8 @@ ip address 192.168.20.1 255.255.255.0
 interface GigabitEthernet0/0/1
  
 ip address 192.168.30.2 255.255.255.252
+
+ ![pings A](./Diagrama A y B.png)
  
 #### Como se puede ver en la imagen para Ciudad A1 o PC A1, se hace ping desde A1 hasta B1 y B2
  ![pings A](./Ciudad A1.png)
@@ -104,6 +104,7 @@ ip address 192.168.30.2 255.255.255.252
 
 #### Como se puede ver en la imagen para Ciudad B2 o PC B2, se hace ping desde B2 hasta A1 y A2
  ![pings A](./Ciudad B2.png)
+ 
 ### La Ciudad de las Redes Aisladas
 
 En el Router-Central, se configuraron dos subinterfaces en la interfaz GigabitEthernet0/0/0:
