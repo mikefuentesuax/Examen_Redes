@@ -51,4 +51,43 @@ La historia del Guardían de la Máscara representa al NAT overload, que permite
 Cuando un dispositivo quiere comunicarse con el exterior, el router (Guardián) reemplaza su dirección IP privada por una dirección IP pública. De este modo, los mensajes parecen provenir de una única IP. Al mismo tiempo el Guardián mantiene una tabla interna para recordar cual era la IP y el puerto, para así cuando llegue una respuesta saber a que dispositivo se debe reenviar.
 
 Usando este método solo se necesita una IP pública para muchos dispositivos, los cual es ideal para las direcciones IPV4 pues estas son limitadas. También como seguridad adicional oculta las redes internas del exterior.
+
+## Parte II:Práctica con Cisco Packet Tracer
+### La Ruta Perdida entre Dos Reinos
+
+Red Ciudad A: 192.168.10.0/24
+    Router-CiudadA (GigabitEthernet0/0/0): 192.168.10.1
+    PC-A1: 192.168.10.10
+    PC-A2: 192.168.10.11
+    Puerta de Enlace PCs A: 192.168.10.1
+
+Red Ciudad B: 192.168.20.0/24
+    Router-CiudadB (GigabitEthernet0/0/0): 192.168.20.1
+    PC-B1: 192.168.20.10
+    PC-B2: 192.168.20.11
+    Puerta de Enlace PCs B: 192.168.20.1
+
+Red Enlace Routers: 192.168.30.0/30
+    Router-CiudadA (GigabitEthernet0/0/1): 192.168.30.1
+    Router-CiudadB (GigabitEthernet0/0/1): 192.168.30.2
+
+Router-CiudadA:
+
+interface GigabitEthernet0/0/0
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
+!
+interface GigabitEthernet0/0/1
+ ip address 192.168.30.1 255.255.255.252
+ no shutdown
+Router-CiudadB:
+
+interface GigabitEthernet0/0/0
+ ip address 192.168.20.1 255.255.255.0
+ no shutdown
+!
+interface GigabitEthernet0/0/1
+ ip address 192.168.30.2 255.255.255.252
+ no shutdown
+
 https://github.com/mikefuentesuax/Examen_Redes.git
