@@ -139,6 +139,8 @@ Diagrama En Busca de la Red Perdida
 #### A continuación se muestra los pings de Arquitecto 2 a Arquitecto 1, Escriba 1 y Escriba 2
 ![pings A](./Arquitecto 2.png)
 
+https://github.com/mikefuentesuax/Examen_Redes.git
+
 #### A continuación se muestra los pings de Escriba 1 a Escriba 2, Arquitecto 1 y Arquitecto 2
 ![pings A](./Escriba 1.png)
 
