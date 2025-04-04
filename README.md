@@ -90,4 +90,26 @@ interface GigabitEthernet0/0/1
  ip address 192.168.30.2 255.255.255.252
  no shutdown
 
+ ![pings A](./)
+
+### La Ciudad de las Redes Aisladas
+
+En el Router-Central, se configuraron dos subinterfaces en la interfaz GigabitEthernet0/0/0:
+
+GigabitEthernet0/0/0.10: Encapsulación dot1Q 10, dirección IP 192.168.10.1/24 (gateway para VLAN 10).
+GigabitEthernet0/0/0.20: Encapsulación dot1Q 20, dirección IP 192.168.20.1/24 (gateway para VLAN 20). La interfaz física GigabitEthernet0/0/0 también se activó con el comando no shutdown. No se requirieron rutas estáticas adicionales ya que el router está directamente conectado a las redes de las VLANs a través de sus subinterfaces.
+Esquema de Direccionamiento IP:
+
+VLAN 10 (Arquitectos): Red 192.168.10.0/24
+    Gateway (Router-Central Gi0/0/0.10): 192.168.10.1
+    PC-Arquitecto1: 192.168.10.10
+    PC-Arquitecto2: 192.168.10.11
+
+VLAN 20 (Escribas): Red 192.168.20.0/24
+    Gateway (Router-Central Gi0/0/0.20): 192.168.20.1
+    PC-Escriba1: 192.168.20.10
+    PC-Escriba2: 192.168.20.11
+
+ 
+
 https://github.com/mikefuentesuax/Examen_Redes.git
