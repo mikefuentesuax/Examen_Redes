@@ -133,15 +133,15 @@ Diagrama En Busca de la Red Perdida
 
 ![pings A](./Diagrama En Busca de la Red Perdida.png)
 
-A continuación se muestra los pings de Arquitecto 1 a Arquitecto 2, Escriba 1 y Escriba 2
+#### A continuación se muestra los pings de Arquitecto 1 a Arquitecto 2, Escriba 1 y Escriba 2
 ![pings A](./Arquitecto 1.png)
 
-A continuación se muestra los pings de Arquitecto 2 a Arquitecto 1, Escriba 1 y Escriba 2
+#### A continuación se muestra los pings de Arquitecto 2 a Arquitecto 1, Escriba 1 y Escriba 2
 ![pings A](./Arquitecto 2.png)
 
-A continuación se muestra los pings de Escriba 1 a Escriba 2, Arquitecto 1 y Arquitecto 2
+#### A continuación se muestra los pings de Escriba 1 a Escriba 2, Arquitecto 1 y Arquitecto 2
 ![pings A](./Escriba 1.png)
 
-A continuación se muestra los pings de Escriba 2 a Escriba 1, Arquitecto 1 y Arquitecto 2
+#### A continuación se muestra los pings de Escriba 2 a Escriba 1, Arquitecto 1 y Arquitecto 2
 ![pings A](./Escriba 2.png)
 
