@@ -56,20 +56,20 @@ Usando este método solo se necesita una IP pública para muchos dispositivos, l
 ### La Ruta Perdida entre Dos Reinos
 
 Red Ciudad A: 192.168.10.0/24
-    Router-CiudadA (GigabitEthernet0/0/0): 192.168.10.1
-    PC-A1: 192.168.10.10
-    PC-A2: 192.168.10.11
-    Puerta de Enlace PCs A: 192.168.10.1
+ -   Router-CiudadA (GigabitEthernet0/0/0): 192.168.10.1
+-   PC-A1: 192.168.10.10
+-   PC-A2: 192.168.10.11
+-   Puerta de Enlace PCs A: 192.168.10.1
 
 Red Ciudad B: 192.168.20.0/24
-    Router-CiudadB (GigabitEthernet0/0/0): 192.168.20.1
-    PC-B1: 192.168.20.10
-    PC-B2: 192.168.20.11
-    Puerta de Enlace PCs B: 192.168.20.1
+-   Router-CiudadB (GigabitEthernet0/0/0): 192.168.20.1
+-   PC-B1: 192.168.20.10
+-   PC-B2: 192.168.20.11
+-   Puerta de Enlace PCs B: 192.168.20.1
 
 Red Enlace Routers: 192.168.30.0/30
-    Router-CiudadA (GigabitEthernet0/0/1): 192.168.30.1
-    Router-CiudadB (GigabitEthernet0/0/1): 192.168.30.2
+-   Router-CiudadA (GigabitEthernet0/0/1): 192.168.30.1
+-   Router-CiudadB (GigabitEthernet0/0/1): 192.168.30.2
 
 Router-CiudadA:
 
@@ -97,18 +97,20 @@ interface GigabitEthernet0/0/1
 En el Router-Central, se configuraron dos subinterfaces en la interfaz GigabitEthernet0/0/0:
 
 GigabitEthernet0/0/0.10: Encapsulación dot1Q 10, dirección IP 192.168.10.1/24 (gateway para VLAN 10).
+
 GigabitEthernet0/0/0.20: Encapsulación dot1Q 20, dirección IP 192.168.20.1/24 (gateway para VLAN 20). La interfaz física GigabitEthernet0/0/0 también se activó con el comando no shutdown. No se requirieron rutas estáticas adicionales ya que el router está directamente conectado a las redes de las VLANs a través de sus subinterfaces.
+
 Esquema de Direccionamiento IP:
 
 VLAN 10 (Arquitectos): Red 192.168.10.0/24
-    Gateway (Router-Central Gi0/0/0.10): 192.168.10.1
-    PC-Arquitecto1: 192.168.10.10
-    PC-Arquitecto2: 192.168.10.11
+-  Gateway (Router-Central Gi0/0/0.10): 192.168.10.1
+- PC-Arquitecto1: 192.168.10.10
+- PC-Arquitecto2: 192.168.10.11
 
 VLAN 20 (Escribas): Red 192.168.20.0/24
-    Gateway (Router-Central Gi0/0/0.20): 192.168.20.1
-    PC-Escriba1: 192.168.20.10
-    PC-Escriba2: 192.168.20.11
+-   Gateway (Router-Central Gi0/0/0.20): 192.168.20.1
+- PC-Escriba1: 192.168.20.10
+- PC-Escriba2: 192.168.20.11
 
  
 
