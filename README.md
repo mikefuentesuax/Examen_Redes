@@ -90,7 +90,7 @@ interface GigabitEthernet0/0/1
  ip address 192.168.30.2 255.255.255.252
  no shutdown
 
- ![pings A](./)
+ ![pings A](./Ciudad A1.png)
 
 ### La Ciudad de las Redes Aisladas
 
