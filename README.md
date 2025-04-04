@@ -118,17 +118,16 @@ En el Router-Central, se configuraron dos subinterfaces en la interfaz GigabitEt
 
 - GigabitEthernet0/0/0.20: Encapsulación dot1Q 20, dirección IP 192.168.20.1/24 (gateway para VLAN 20). La interfaz física GigabitEthernet0/0/0 también se activó con el comando no shutdown.
   
-Esquema de Direccionamiento IP:
+### Esquema de Direccionamiento IP:
 
-VLAN 10 (Arquitectos): Red 192.168.10.0/24
--  Gateway (Router-Central Gi0/0/0.10): 192.168.10.1
-- PC-Arquitecto1: 192.168.10.10
-- PC-Arquitecto2: 192.168.10.11
-
-VLAN 20 (Escribas): Red 192.168.20.0/24
--   Gateway (Router-Central Gi0/0/0.20): 192.168.20.1
-- PC-Escriba1: 192.168.20.10
-- PC-Escriba2: 192.168.20.11
+| VLAN              | Red               | Dispositivo                       | Interfaz              | Dirección IP        |
+|-------------------|-------------------|-----------------------------------|-----------------------|---------------------|
+| **VLAN 10** | `192.168.10.0/24` | Gateway (Router-Central)          | GigabitEthernet0/0/0.10 | `192.168.10.1`      |
+| (Arquitectos)     |                   | PC-Arquitecto1                    | FastEthernet0         | `192.168.10.10`     |
+|                   |                   | PC-Arquitecto2                    | FastEthernet0         | `192.168.10.11`     |
+| **VLAN 20** | `192.168.20.0/24` | Gateway (Router-Central)          | GigabitEthernet0/0/0.20 | `192.168.20.1`      |
+| (Escribas)        |                   | PC-Escriba1                     | FastEthernet0         | `192.168.20.10`     |
+|                   |                   | PC-Escriba2                     | FastEthernet0         | `192.168.20.11`     |
 
  
 
