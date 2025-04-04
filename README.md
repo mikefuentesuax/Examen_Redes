@@ -102,7 +102,7 @@ interface GigabitEthernet0/0/1
 #### Como se puede ver en la imagen para Ciudad A2 o PC A2, se hace ping desde A2 hasta B1 y B2
  ![pings A](./Ciudad A2.png)
 
- #### Como se puede ver en la imagen para Ciudad B1 o PC B1, se hace ping desde B1 hasta A1 y A2
+#### Como se puede ver en la imagen para Ciudad B1 o PC B1, se hace ping desde B1 hasta A1 y A2
  ![pings A](./Ciudad B1.png)
 
 #### Como se puede ver en la imagen para Ciudad B2 o PC B2, se hace ping desde B2 hasta A1 y A2
